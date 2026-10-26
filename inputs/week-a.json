@@ -1,0 +1,51 @@
+{
+  "data_type": "人工编写的教学样例，非真实客户经营数据",
+  "grid": "社区宽带业务网格",
+  "unit": "去重客户数",
+  "metric_order": [
+    "leads",
+    "effective_contacts",
+    "appointments",
+    "orders"
+  ],
+  "metric_definitions": {
+    "leads": "当周新登记线索客户数",
+    "effective_contacts": "这批线索中当周完成双向有效沟通的客户数",
+    "appointments": "这批已有效沟通客户中当周确认预约的客户数",
+    "orders": "这批已预约客户中当周完成宽带办理的客户数"
+  },
+  "cohort_rule": "各周均以当周新登记线索为独立同周漏斗，按客户去重、逐级嵌套；跨周跟进与办理不计入本表。同周比较可算转化，不能代表最终生命周期转化。所有数字均为教学设定。",
+  "source_id": "REPORT-A",
+  "prior": {
+    "period": "2026-10-05至2026-10-11",
+    "leads": 200,
+    "effective_contacts": 150,
+    "appointments": 50,
+    "orders": 25
+  },
+  "current": {
+    "period": "2026-10-12至2026-10-18",
+    "leads": 200,
+    "effective_contacts": 160,
+    "appointments": 40,
+    "orders": 16
+  },
+  "field_notes": [
+    {
+      "id": "A-N1",
+      "text": "一线反馈部分客户问费用时需要反复解释。",
+      "evidence_level": "非结构化反馈，未统计人数，原因待验证"
+    },
+    {
+      "id": "A-N2",
+      "text": "部分预约客户临时取消，原因没有统一记录。",
+      "evidence_level": "非结构化反馈，未统计人数，原因待验证"
+    }
+  ],
+  "missing_evidence": [
+    "分渠道分产品明细",
+    "客户取消原因统计",
+    "触达时段与接触次数",
+    "对照试验与动作实施证据"
+  ]
+}
