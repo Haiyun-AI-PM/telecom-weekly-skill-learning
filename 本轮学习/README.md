@@ -25,4 +25,8 @@
 
 ## 演示时在 CogSeed 查看
 
-工作空间：**电信周报学习与复用**。先看“第一阶段｜分析与核验”，再看本轮以 `weekly-business-review-20261027` 技能开启的会话（11:06开始），其中保存了复用、纠错、边界测试和收尾过程。
+工作空间：**电信周报学习与复用**。先看“第一阶段｜分析与核验”，再看“第二阶段｜Skill复用与边界核验”（以 `weekly-business-review-20261027` 技能开启，11:06开始），其中保存了复用、纠错、边界测试和收尾过程。
+
+## 提交状态（2026-10-27）
+
+[本轮成果提交 65dbb1f](https://github.com/Haiyun-AI-PM/telecom-weekly-skill-learning/commit/65dbb1fef747873f215347c423a1925bbaa4e93a) 已推送到 `codex/telecom-learning`。EduSeed **尚未提交**：插件页面显示已激活、连接正常，但聊天运行入口报配置未注入，未取得本次在线绑定与挑战信息。详见 [提交状态与阻塞记录](evidence/提交状态与阻塞记录.md)。
