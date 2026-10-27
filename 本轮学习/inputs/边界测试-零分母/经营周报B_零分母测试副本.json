@@ -1,0 +1,52 @@
+{
+  "data_type": "人工编写的教学样例，非真实客户经营数据",
+  "grid": "社区宽带业务网格",
+  "unit": "去重客户数",
+  "metric_order": [
+    "leads",
+    "effective_contacts",
+    "appointments",
+    "orders"
+  ],
+  "metric_definitions": {
+    "leads": "当周新登记线索客户数",
+    "effective_contacts": "这批线索中当周完成双向有效沟通的客户数",
+    "appointments": "这批已有效沟通客户中当周确认预约的客户数",
+    "orders": "这批已预约客户中当周完成宽带办理的客户数"
+  },
+  "cohort_rule": "各周均以当周新登记线索为独立同周漏斗，按客户去重、逐级嵌套；跨周跟进与办理不计入本表。同周比较可算转化，不能代表最终生命周期转化。所有数字均为教学设定。",
+  "source_id": "REPORT-B2-ZD0",
+  "prior": {
+    "period": "2026-10-12至2026-10-18",
+    "leads": 200,
+    "effective_contacts": 160,
+    "appointments": 40,
+    "orders": 16
+  },
+  "current": {
+    "period": "2026-10-19至2026-10-25",
+    "leads": 0,
+    "effective_contacts": 0,
+    "appointments": 0,
+    "orders": 0
+  },
+  "field_notes": [
+    {
+      "id": "B2-N1",
+      "text": "本期增加了社区活动来源的线索，但暂未提供各渠道的线索数和有效沟通数。",
+      "evidence_level": "质性反馈，未给分渠道数量，原因待验证"
+    },
+    {
+      "id": "B2-N2",
+      "text": "部分人员反馈开始使用新的费用解释卡，但没有记录哪些客户实际使用过，也没有设置对照组。",
+      "evidence_level": "非结构化反馈，不能据此认定解释卡带来增长"
+    }
+  ],
+  "missing_evidence": [
+    "分渠道分产品明细",
+    "客户取消原因统计",
+    "触达时段与接触次数",
+    "对照试验与动作实施证据"
+  ],
+  "test_note": "零分母边界测试副本：口径、周期、单位、字段定义、去重与嵌套规则与 REPORT-B2 完全一致；仅将 current 的四项计数全部设为 0。prior 保持原值不变。非真实客户数据，非新业务样例。"
+}
